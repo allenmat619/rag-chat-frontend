@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --proxy-config proxy.conf.local.json",
+    "start:main": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build && npm run build:rag-core && npm run build:rag-chat",
+    "build:rag-core": "ng build rag-core",
+    "build:rag-chat": "ng build rag-chat",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
