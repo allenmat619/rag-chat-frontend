@@ -1,0 +1,16 @@
+.page-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+  color: firebrick;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+mat-tab-group ::ng-deep .mat-mdc-tab-body-wrapper {
+  height: calc(100vh - 102px);
+}

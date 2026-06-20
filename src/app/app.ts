@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ChatPageComponent } from 'rag-chat';
+import { RagMainComponent } from 'rag-chat';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ChatPageComponent],
+  imports: [RouterOutlet, RagMainComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
