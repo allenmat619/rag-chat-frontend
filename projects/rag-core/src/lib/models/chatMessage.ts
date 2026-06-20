@@ -1,10 +1,11 @@
 import { ChatRequest } from "rag-core";
 import { Source } from "./source";
 import { MessageType } from "./messageType";
+import { marked } from "marked";
 
 export class ChatMessage {
   chatId?: string;
-  message: string;
+  message: string | Promise<string>;
   sources: Source[];
   type: MessageType;
 
@@ -25,7 +26,7 @@ export class ChatMessage {
       chatMessage.type = MessageType.Request;
     }
     else if(json.response){
-      chatMessage.message = json.response;
+      chatMessage.message = marked.parse(json.response);
       chatMessage.type = MessageType.Response;
     }
     if(json.sources && Array.isArray(json.sources)){

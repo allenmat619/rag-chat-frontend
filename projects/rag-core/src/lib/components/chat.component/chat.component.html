@@ -14,9 +14,7 @@
       </div>
       }
       @if (message.type === MessageType.Response) {
-      <div class="message response-message">
-        {{ message.message }}
-      </div>
+      <div class="message response-message" [innerHTML]="message.message"></div>
       }
       }
       }

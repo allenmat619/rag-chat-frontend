@@ -10,6 +10,7 @@ import { ChatRequest } from '../../models/chatRequest';
 import { ChatMessage } from '../../models/chatMessage';
 import { MessageType } from '../../models/messageType';
 import { TypingIndicatorComponent } from '../typing-indicator.component/typing-indicator.component';
+import { marked } from 'marked';
 
 
 @Component({
