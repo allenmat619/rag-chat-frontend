@@ -1,4 +1,3 @@
-import { ChatRequest } from "rag-core";
 import { Source } from "./source";
 import { MessageType } from "./messageType";
 import { marked } from "marked";
