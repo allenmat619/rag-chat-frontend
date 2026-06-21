@@ -1,0 +1,21 @@
+<header class="page-header">
+  <h1>RAG Chat</h1>
+</header>
+
+<mat-tab-group (selectedTabChange)="onTabChange($event)">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>chat</mat-icon>
+      Chat
+    </ng-template>
+    <rag-chat-page />
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>upload_file</mat-icon>
+      Upload
+    </ng-template>
+    <document-view [selectedTabIndex]="selectedTabIndex" />    
+  </mat-tab>
+</mat-tab-group>

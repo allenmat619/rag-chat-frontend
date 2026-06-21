@@ -1,0 +1,44 @@
+<div class="chat-container">
+  <mat-card class="chat-card">
+    <div class="message-container">
+      @if (previousMessages.length === 0) {
+      <div class="placeholder">
+        No messages yet. Start the conversation!
+      </div>
+      }
+      @else {
+      @for (message of previousMessages; track $index) {
+      @if (message.type === MessageType.Request) {
+      <div class="message request-message">
+          {{ message.message }}
+      </div>
+      }
+      @if (message.type === MessageType.Response) {
+      <div class="message response-message" [innerHTML]="message.message"></div>
+      }
+      }
+      }
+
+
+      @if (isLoading) {
+      <div class="thinking">
+        <typing-indicator></typing-indicator>
+      </div>
+      }
+
+    </div>
+
+    <div class="input-area">
+      <mat-form-field appearance="outline" class="message-input">
+        <textarea matInput rows="2" placeholder="Type a message..." [(ngModel)]="message">
+        </textarea>
+      </mat-form-field>
+
+      <button mat-icon-button color="primary" (click)="sendMessage()">
+        <mat-icon>
+          send
+        </mat-icon>
+      </button>
+    </div>
+  </mat-card>
+</div>

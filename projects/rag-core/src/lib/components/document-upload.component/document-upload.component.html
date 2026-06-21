@@ -1,0 +1,6 @@
+<input #fileInput type="file" hidden (change)="uploadDocument($event)">
+<button mat-raised-button color="primary" (click)="fileInput.click()" [showProgress]="isLoading">
+  <mat-icon>upload</mat-icon>
+  Upload Document
+  <mat-progress-spinner progressIndicator mode="indeterminate" diameter="20" aria-label="Loading" tabindex="" />
+</button>

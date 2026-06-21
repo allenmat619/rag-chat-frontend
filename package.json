@@ -1,0 +1,50 @@
+{
+  "name": "rag-chat-frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --proxy-config proxy.conf.local.json",
+    "start:main": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build && npm run build:rag-core && npm run build:rag-chat",
+    "build:rag-core": "ng build rag-core",
+    "build:rag-chat": "ng build rag-chat",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.8.0",
+  "dependencies": {
+    "@angular/cdk": "^22.0.2",
+    "@angular/common": "^22.0.2",
+    "@angular/compiler": "^22.0.2",
+    "@angular/core": "^22.0.2",
+    "@angular/forms": "^22.0.2",
+    "@angular/material": "^22.0.2",
+    "@angular/platform-browser": "^22.0.2",
+    "@angular/router": "^22.0.2",
+    "marked": "^18.0.5",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.0.3",
+    "@angular/cli": "^22.0.3",
+    "@angular/compiler-cli": "^22.0.2",
+    "jsdom": "^27.1.0",
+    "ng-packagr": "^22.0.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.0.8"
+  }
+}

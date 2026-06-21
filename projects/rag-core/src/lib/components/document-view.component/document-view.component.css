@@ -1,0 +1,50 @@
+.document-container {
+  background-color: lavender;
+  width: 90%;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  height: calc(100vh - 500px);
+  overflow: auto;
+}
+
+.progress {
+  margin-top: calc(((100vh - 500px) / 2) - 80px);
+  justify-self: center;
+}
+
+.border {
+  border: 1px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.item-icon {
+  margin-right: 10px;
+  align-self: center;
+}
+
+.document-upload-container {
+  margin-top: 20px;
+  justify-self: center;
+}
+
+.download-btn{
+  margin-right: 20px;
+}
+
+.mat-mdc-list-item-icon {
+  color: rgba(0, 0, 0, 0.54);
+}

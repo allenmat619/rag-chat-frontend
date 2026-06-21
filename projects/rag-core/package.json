@@ -1,0 +1,12 @@
+{
+  "name": "rag-core",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^22.0.2",
+    "@angular/core": "^22.0.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
