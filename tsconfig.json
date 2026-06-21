@@ -4,8 +4,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "rag-chat": [
-        "./dist/rag-chat"
+      "rag-chat": [        
+        "./projects/rag-chat/src/public-api.ts"
       ],
       "rag-core": [
         "./dist/rag-core"
@@ -24,6 +24,7 @@
     "module": "preserve"
   },
   "angularCompilerOptions": {
+    "compilationMode": "partial",
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,

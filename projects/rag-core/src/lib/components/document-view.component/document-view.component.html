@@ -1,0 +1,43 @@
+<div class="document-container">
+  @if (isLoading) {
+  <mat-spinner diameter="80" class="progress"></mat-spinner>
+  }
+  @else{
+  @for (document of documents; track $index) {
+  <mat-list-item class="border">
+    <div class="item-container">
+      <div class="list-item">
+        <div class="item-icon">
+          <mat-icon matListItemIcon>note</mat-icon>
+        </div>
+
+        <div>
+          <div matListItemTitle>{{document.fileName}}</div>
+          <div matListItemLine>{{document.uploadDate | date}}</div>
+        </div>
+      </div>
+
+      <div>
+        <button class="download-btn" matButton="outlined" [showProgress]="downloadInProgress[$index]"
+          (click)="downloadDocument(document, $index)">
+          <mat-icon>download</mat-icon>
+          Download
+          <mat-progress-spinner progressIndicator mode="indeterminate" diameter="20" aria-label="Loading" tabindex="" />
+        </button>
+
+        <button matButton="outlined" [showProgress]="deletionInProgress[$index]"
+          (click)="deleteDocument(document.documentId, $index)">
+          <mat-icon>delete</mat-icon>
+          Delete
+          <mat-progress-spinner progressIndicator mode="indeterminate" diameter="20" aria-label="Loading" tabindex="" />
+        </button>
+      </div>
+    </div>
+  </mat-list-item>
+  }
+  }
+</div>
+
+<div class="document-upload-container">
+  <document-upload (document-uploaded)="documentUploaded($event)" />
+</div>

@@ -24,7 +24,7 @@ export class ChatComponent implements OnChanges {
   previousMessages: ChatMessage[] = [];
   MessageType = MessageType;
   thinkingText: string = 'Thinking';
-  private thinkingInterval?: number;
+  private thinkingInterval?: number;  
 
   @Input()isLoading: boolean = false;
 
