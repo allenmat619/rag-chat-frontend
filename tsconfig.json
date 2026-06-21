@@ -5,10 +5,10 @@
   "compilerOptions": {
     "paths": {
       "rag-chat": [
-        "./projects/rag-chat/src/public-api.ts"
+        "./dist/rag-chat"
       ],
       "rag-core": [
-        "./projects/rag-core/src/public-api.ts"
+        "./dist/rag-core"
       ]
     },
     "strict": true,
