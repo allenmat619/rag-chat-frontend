@@ -7,7 +7,7 @@ import { MatButton } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { marked } from "marked";
-import { catchError, map, Observable, of, switchMap, tap } from 'rxjs';
+import { map, Observable, of, switchMap } from 'rxjs';
 
 @Component({
   selector: 'rag-chat-page',
