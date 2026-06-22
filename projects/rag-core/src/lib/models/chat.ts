@@ -2,7 +2,7 @@ import { Source } from "./source";
 import { MessageType } from "./messageType";
 import { marked } from "marked";
 
-export class ChatMessage {
+export class Chat {
   chatId?: string;
   message: string | Promise<string>;
   sources: Source[];
@@ -15,8 +15,8 @@ export class ChatMessage {
     this.type = MessageType.Request;
   }
 
-  static fromJson(json: any): ChatMessage {
-    const chatMessage = new ChatMessage();
+  static fromJson(json: any): Chat {
+    const chatMessage = new Chat();
     if(json.chatId){
       chatMessage.chatId = json.chatId;
     }

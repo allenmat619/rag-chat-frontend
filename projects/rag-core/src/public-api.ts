@@ -17,3 +17,5 @@ export * from './lib/services/document.service';
 export * from './lib/models/chatRequest';
 export * from './lib/models/chatResponse';
 export * from './lib/models/document';
+export * from './lib/models/chat';
+export * from './lib/models/messageType';

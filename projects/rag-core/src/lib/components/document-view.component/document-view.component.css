@@ -20,15 +20,18 @@
 
 .item-container {
   display: flex;
+  height: 50px;
   justify-content: space-between;
+  align-items: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid black;
   margin-bottom: 20px;
 }
 
 .list-item {
   display: flex;
+  align-items: center;
 }
 
 .item-icon {
@@ -45,6 +48,18 @@
   margin-right: 20px;
 }
 
+.margin-top-n-10{
+  margin-top: -10px !important;
+}
+
+.margin-top-10{
+  margin-top: 10px !important;
+}
+
 .mat-mdc-list-item-icon {
   color: rgba(0, 0, 0, 0.54);
+}
+
+.mdc-list-item.mdc-list-item--with-one-line{
+  height: auto !important;
 }
