@@ -39,20 +39,25 @@
   align-self: center;
 }
 
+.doc-name {
+  font-size: medium;
+}
+
+.doc-date {
+  font-weight: 300;
+  font-size: small;
+}
+
 .document-upload-container {
   margin-top: 20px;
   justify-self: center;
 }
 
-.download-btn{
+.download-btn {
   margin-right: 20px;
 }
 
-.margin-top-n-10{
-  margin-top: -10px !important;
-}
-
-.margin-top-10{
+.margin-top-10 {
   margin-top: 10px !important;
 }
 
@@ -60,6 +65,6 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
-.mdc-list-item.mdc-list-item--with-one-line{
+.mdc-list-item.mdc-list-item--with-one-line {
   height: auto !important;
 }

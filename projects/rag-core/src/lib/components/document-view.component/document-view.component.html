@@ -4,7 +4,7 @@
   }
   @else{
   @for (document of documents; track $index) {
-  <mat-list-item class="border">
+  <div class="border">
     <div class="item-container">
       <div class="list-item">
         <div class="item-icon">
@@ -12,8 +12,8 @@
         </div>
 
         <div>
-          <div matListItemTitle class="margin-top-n-10">{{document.fileName}}</div>
-          <div matListItemLine>{{document.uploadDate | date}}</div>
+          <div class="doc-name">{{document.fileName}}</div>
+          <div class="doc-date">{{document.uploadDate | date}}</div>
         </div>
       </div>
 
@@ -33,7 +33,7 @@
         </button>
       </div>
     </div>
-  </mat-list-item>
+  </div>
   }
   }
 </div>

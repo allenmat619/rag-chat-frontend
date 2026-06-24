@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  position: absolute;
+  top: calc(50% - 30px);
+  justify-self: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-mdc-button>.mat-icon {
+  margin: 0;
+}
+
+.chat-btn {
+  width: calc(100% - 100px);
+}
+
+button ::ng-deep .mat-mdc-button-persistent-ripple::before {
+  border-radius: 5px;
+}
+
+.delete-btn {
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.delete-btn-icon {
+  padding: 1px;
+  border-radius: 8px;
+  color: #BA005C;
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.delete-btn-icon:hover {
+  box-shadow: 0 2px 8px #BA005C;
+}
+
+/* .delete-btn-icon{
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.delete-btn-icon:hover{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.delete-btn ::ng-deep .mat-mdc-button-persistent-ripple::before {
+  display: none;
+} */
+
+.chat-btn ::ng-deep .mdc-button__label {
+  width: 100%;
+  text-align: start;
+}

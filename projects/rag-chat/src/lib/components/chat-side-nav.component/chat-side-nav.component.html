@@ -1,0 +1,28 @@
+<div class="chats-container">
+  <div class="header">
+    <button matButton (click)="newChat()">New Chat...</button>
+    <button matButton (click)="deleteAll()" [disabled]="allChats.length === 0">
+      <mat-icon class="delete-all-btn-icon">delete</mat-icon>
+      Delete All
+    </button>
+  </div>
+
+
+  @if (isLoading) {
+  <mat-spinner diameter="80" class="progress"></mat-spinner>
+  }
+
+  <mat-list>
+    @for (chat of allChats; track $index) {
+    <mat-list-item>
+      <div class="list-container">
+        <button matButton class="chat-btn" (click)="selectChat(chat.chatId)">{{chat.title}}</button>
+        <button matIconButton class="delete-btn" (click)="deleteChat(chat.chatId)">
+          <mat-icon class="delete-btn-icon">delete</mat-icon>
+        </button>
+      </div>
+
+    </mat-list-item>
+    }
+  </mat-list>
+</div>

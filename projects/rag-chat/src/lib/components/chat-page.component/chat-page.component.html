@@ -1,18 +1,6 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <div class="chats-container">
-      <button matButton (click)="newChat()">New Chat...</button>
-
-      <mat-list>
-        @for (chat of allChats; track $index) {
-        <mat-list-item>
-          <button matButton (click)="selectChat(chat.chatId)">{{chat.title}}</button>
-        </mat-list-item>
-        }
-      </mat-list>
-
-    </div>
-
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <chat-side-nav [reloadChats]="reloadChats" (chat-selected)="onChatSelected($event)"></chat-side-nav>
   </mat-drawer>
 
   <div class="example-sidenav-content">
