@@ -1,3 +1,11 @@
-.mat-mdc-button > .mat-icon {
+.mat-mdc-button>.mat-icon {
   margin: 0;
+}
+
+.mat-drawer-side {
+  box-shadow: 0 2px 8px #BA005C !important;
+}
+
+.main-container {
+  height: 100%;
 }
