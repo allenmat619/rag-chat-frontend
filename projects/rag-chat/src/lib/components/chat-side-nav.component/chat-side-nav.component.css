@@ -44,18 +44,6 @@ button ::ng-deep .mat-mdc-button-persistent-ripple::before {
   box-shadow: 0 2px 8px #BA005C;
 }
 
-/* .delete-btn-icon{
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.delete-btn-icon:hover{
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
-
-.delete-btn ::ng-deep .mat-mdc-button-persistent-ripple::before {
-  display: none;
-} */
-
 .chat-btn ::ng-deep .mdc-button__label {
   width: 100%;
   text-align: start;

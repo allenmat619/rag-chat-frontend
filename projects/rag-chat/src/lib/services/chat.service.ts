@@ -15,7 +15,7 @@ export class ChatService {
 
 
   getAllChats(): Observable<ChatHistory[]> {
-    return this.http.get<ChatHistory[]>('/api/chat')
+    return this.http.get<ChatHistory[]>('/api/chat');
   }
 
 
